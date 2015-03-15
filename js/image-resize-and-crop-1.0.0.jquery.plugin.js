@@ -74,8 +74,9 @@
 
         var refreshOutputImage = function (swidth, sheight, sy, sx)
         {
-            if (sy < 0) sy = 0;
-            if (sx < 0) sx = 0;
+
+            if (sy < 0 || isNaN(sy)) sy = 0;
+            if (sx < 0 || isNaN(sx)) sx = 0;
             var image = new Image();
             image.onload = function() {
                 outputImage = clip(image, sx, sy, swidth, sheight, 0, 0, options.selection.width, options.selection.height);
