@@ -84,3 +84,7 @@ var outputImage = f.getImageObject();
     <li>width (int): largezza dell'immagine</li>
     <li>height (int): altezza dell'immagine</li>
 </ul>
+<h2>Demo</h2>
+<p>
+    <a href="http://jaleko.altervista.org/github/demo/image-resize-and-crop/" target="_blank">Vai alla demo</a>
+</p>
