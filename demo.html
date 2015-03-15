@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Image Resize And Crop Demo</title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="css/image-resize-and-crop-1.0.0.jquery.plugin.css">
+		<style type="text/css">
+			* { font-size: 12px; }
+		</style>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/image-resize-and-crop-1.0.0.jquery.plugin.js"></script>
+		<script type="text/javascript">
+			var f;
+			$(document).ready(function () {
+				f = $('#file').imageResizeAndCrop();
+			});
+		</script>
+	</head>
+	<body>
+		<input type="file" id="file">
+		<div id="preview" style="display: none;">
+			<div id="overlay">
+				<div id="selection"></div>
+			</div>
+		</div>
+		<img src="" id="output" style="display: none;">
+	</body>
+</html>

@@ -1,0 +1,3 @@
+#preview { border: 1px solid #000000; }
+#selection { border: 1px dashed #ff0000; background-color: #ffffff; }
+#overlay { background-color: #000000; opacity: 0.5; width: 100%; height: 100%; float: left; }
